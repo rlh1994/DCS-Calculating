@@ -1,0 +1,24 @@
+\contentsline {section}{\numberline {1}Introduction}{1}
+\contentsline {subsection}{\numberline {1.1}Terminology}{1}
+\contentsline {subsection}{\numberline {1.2}Differential Cross Section}{1}
+\contentsline {subsection}{\numberline {1.3}Unfolding Matrix}{3}
+\contentsline {subsection}{\numberline {1.4}Number of Nuclei Targets}{3}
+\contentsline {subsection}{\numberline {1.5}Other Variables}{5}
+\contentsline {section}{\numberline {2}Software Requirements}{5}
+\contentsline {subsection}{\numberline {2.1}ROOT}{6}
+\contentsline {subsection}{\numberline {2.2}GENIE}{6}
+\contentsline {subsection}{\numberline {2.3}Honda Flux Driver}{6}
+\contentsline {section}{\numberline {3}File Package}{7}
+\contentsline {subsection}{\numberline {3.1}Calculating the Migration Matrix}{7}
+\contentsline {subsection}{\numberline {3.2}Calculating Integrated Flux}{8}
+\contentsline {subsection}{\numberline {3.3}Calculating Detector Efficiency}{8}
+\contentsline {subsection}{\numberline {3.4}Calculating the DCS}{9}
+\contentsline {subsection}{\numberline {3.5}Other Included Files}{11}
+\contentsline {section}{\numberline {4}Next Steps}{11}
+\contentsline {subsection}{\numberline {4.1}Using More Files With TChain}{11}
+\contentsline {subsection}{\numberline {4.2}Weighted Events}{12}
+\contentsline {subsection}{\numberline {4.3}Different Binning for True and Fake Data}{12}
+\contentsline {subsection}{\numberline {4.4}Optimisation of the Code}{12}
+\contentsline {section}{\numberline {5}Conclusion}{13}
+\contentsline {section}{\numberline {6}Useful Links}{13}
+\contentsline {section}{\numberline {A}Modifying GENIE to use larger FLUKA files}{14}

@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{mdframed}
+\usepackage[margin=3cm]{geometry}
+\usepackage[superscript,biblabel]{cite}
+\numberwithin{equation}{section}
+\DeclareMathOperator{\Lagr}{\mathcal{L}}
+\numberwithin{figure}{section}
+
+
+
+\begin{document}
+
+\title{Calculating the Differential Cross Section Using IceCube Simulation Data}
+\author{Ryan Hill \\
+Queen Mary, University Of London Undergraduate\\
+\texttt{r.l.hill@se12.qmul.ac.uk}}
+\date{\today}
+\maketitle
+\thispagestyle{empty}
+%
+%
+\graphicspath{{images/}}
+%
+\begin{abstract}
+This will review and summarise the work I have been doing with Dr Teppei Katori over the summer of 2015 with regards to calculating the Differential Cross Section (DCS) using simulated data from the IceCube experiment at the South Pole. We will start by reviewing the equations used to calculate each part needed for the DCS, then look at the methods implemented in the code itself, before finally considering what the next steps would be for the development of the code.
+\end{abstract}
+%
+\clearpage
+%
+\tableofcontents
+\thispagestyle{empty}
+%
+\clearpage
+%
+\setcounter{page}{1}
+\section{Introduction}
+\subsection{Differential Cross Section}
+The DCS is a very important quantity in the world of particle physics and is more useful than just the regular cross section as it quantifies the intrinsic rate of an event that can be detected at a given angle, something the scalar cross section cannot tell you. With this in mind we can see why it might be important to want to calculate these quantity. The main equation we will be using in this summary is similar to the usual DCS equation with some additional quantities due to way in which the data is simulated. That equation can be written as
+\begin{equation}
+	\frac{d\aigma}{dE_\mu_i} = \frac{\Sum\limits_{j}U_{ij}(d_j-b_j)}{\Delta E N t \Phi \epsilon_i Sr} 
+	\label{eq:DCS}
+\end{equation}
+where $U_{ij}$ is the unfolding matrix, $d_j,b_j$ are the data and background respectively, $\Delta E$ is the energy bin width, $N$ is the number of target nuclei, $t$ is the time the simulation was run for, $\Phi$ is the integrated neutrino flux, $\epsilon_i$ is the bin efficiency and $Sr$ is the solid angle for that bin. 
+\subsubsection{Unfolding Matrix} 
+The unfolding matrix is the most complicated part of the calculation as it involves creating it from a data set that contains both the \emph{true} data and the \emph{fake} data; by that I mean that the true data is the correct values for all quantities relating to all particles involved, and the fake data is the values that are calculated/measured after detection has taken place. Normally this would be impossible, how could we know the true values from before detection? We can get around this problem by using a simulation (well, 1000 simulations to be more specific) so we can know the true and fake data and work out the unfolding matrix from this. Before we can create our unfolding matrix we must create a migration matrix $M_{ij}$. The migration matrix defines the correlation between the true and fake data such that
+\begin{equation}
+	d_j^true = \sum\limits_i M_{ij}
+\end{equation}
+%
+%
+%\nocite{*}
+%\bibliographystyle{ieeetr}
+%\bibliography{solitonbib} 
+\end{document}
