@@ -1,11 +1,6 @@
 honda_integrate(){
 	
-	//some stuff we will, fixed from running the matrix before.
-	const int nbins_en = 10; //steps of 10Gev
-	const int nbins_theta = 1; //steps of 180 degrees, Pi rads
-	const int nbins_phi = 1; //steps of 360 degrees, Pi/0.5
-	const int nbins_total = nbins_en*nbins_theta*nbins_phi;
-
+	//variables needed to read in the honda flux file
 	int ibin, section, subsection, line, j;
   	double energy, costheta, flux1, flux2, phi;
   	double energy_edge[38];

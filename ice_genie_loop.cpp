@@ -1,24 +1,5 @@
 ice_genie_loop(){
 
-	//prelim1
-	gStyle->SetOptStat(0000);
-	gStyle->SetOptFit(1);
-	gStyle->SetOptTitle(0);
-	gStyle->SetTitle(0);
-	gStyle->SetPalette(1);
-	gStyle->SetFillColor(1);
-	gStyle->SetPadColor(0);
-	gStyle->SetCanvasColor(0);
-	gStyle->SetStatColor(0);
-	gStyle->SetTitleColor(1);
-	gStyle->SetTitleSize(0.06);
-	gStyle->SetPadBorderMode(0);
-	gStyle->SetPadBottomMargin(0.15);
-	gStyle->SetPadLeftMargin(0.12);
-	gStyle->SetPadRightMargin(0.12); 
-	gStyle->SetFrameBorderMode(0);
-	gStyle->SetCanvasBorderMode(0);
-	gStyle->SetTextFont(22);
 
   	//change these 3 numbers for number of bins, must match original make matrix
 	const int nbins_en = 10; 
